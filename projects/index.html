@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="James">
+    <meta name="description" content="John Doe&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="http://www.example.com">
+    <title>
+  Projects · James
+</title>
+
+    <link rel="canonical" href="http://www.example.com/projects/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://www.example.com/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="http://www.example.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://www.example.com">
+      James
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.example.com/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.example.com/bookshelf/">Bookshelf</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="http://www.example.com/projects/">Projects</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Projects</h1>
+    </header>
+
+    <script>
+fetch('https://api.github.com/repos/mengkheang\/esmysqlsync')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(res) {
+    var section = document.getElementsByTagName("SECTION")[1];
+    var wrapper = document.createElement("DIV");
+    wrapper.id = res.id
+    var name = document.createElement("H1");
+    var language = document.createElement("CODE");
+    var description = document.createElement("P");
+    var link = document.createElement("A");
+    var titleWrapper = document.createElement("DIV");
+    titleWrapper.style['display'] = 'flex';
+    titleWrapper.style['align-items'] = 'center';
+    titleWrapper.appendChild(name)
+    titleWrapper.appendChild(language)
+    language.style['margin-left'] = '10px';
+    link.href = res.html_url;
+    link.innerHTML = res.name
+    name.style.display = 'inline';
+    name.style['height'] = '50px';
+    name.appendChild(link)
+    language.innerHTML = res.language;
+    description.innerHTML = res.description;
+    wrapper.appendChild(titleWrapper);
+    wrapper.appendChild(description);
+    section.appendChild(wrapper);
+  });
+</script>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2015    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
