@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on James</title>
-    <link>http://www.example.com/posts/</link>
+    <link>https://james1888.github.io/posts/</link>
     <description>Recent content in Posts on James</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://james1888.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open Unity 5 Project With Right Click</title>
-      <link>http://www.example.com/posts/open-unity-5-project-with-right-click/</link>
+      <link>https://james1888.github.io/posts/open-unity-5-project-with-right-click/</link>
       <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/open-unity-5-project-with-right-click/</guid>
+      <guid>https://james1888.github.io/posts/open-unity-5-project-with-right-click/</guid>
       <description>Are you tired of having to open Unity3D to open your Unity3D project or sometimes you have to open Unity3D and press Open and search for your Unity3D project. Well no more, I found this awesome trick that would make opening Unity3D project way for more easier on both Windows and OS X.
 First off, On Windows this is from Adam Tuliper an Developer Evangelist for Microsoft blog. It&amp;rsquo;s just registry file.</description>
     </item>

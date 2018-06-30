@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>James</title>
-    <link>http://www.example.com/</link>
+    <link>https://james1888.github.io/</link>
     <description>Recent content on James</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 Nov 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://james1888.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Open Unity 5 Project With Right Click</title>
-      <link>http://www.example.com/posts/open-unity-5-project-with-right-click/</link>
+      <link>https://james1888.github.io/posts/open-unity-5-project-with-right-click/</link>
       <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/posts/open-unity-5-project-with-right-click/</guid>
+      <guid>https://james1888.github.io/posts/open-unity-5-project-with-right-click/</guid>
       <description>Are you tired of having to open Unity3D to open your Unity3D project or sometimes you have to open Unity3D and press Open and search for your Unity3D project. Well no more, I found this awesome trick that would make opening Unity3D project way for more easier on both Windows and OS X.
 First off, On Windows this is from Adam Tuliper an Developer Evangelist for Microsoft blog. It&amp;rsquo;s just registry file.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://www.example.com/about/</link>
+      <link>https://james1888.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/about/</guid>
+      <guid>https://james1888.github.io/about/</guid>
       <description>Work Experience At Mediaload PTE. LTD React Native Developer 2018 Feburary to Present
 Building iOS and Android for Little Fashion L192.
 At Pathmazing Node.js Backend Developer 2017 August to November
@@ -39,20 +39,20 @@ Graduated Bachelor Degree in major Computer Science.</description>
     
     <item>
       <title>Bookshelf</title>
-      <link>http://www.example.com/bookshelf/</link>
+      <link>https://james1888.github.io/bookshelf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/bookshelf/</guid>
+      <guid>https://james1888.github.io/bookshelf/</guid>
       <description>All the books that I&amp;rsquo;ve read and owned.
 .gr_grid_container { } .gr_grid_book_container { float: left; width: 98px; height: 160px; padding: 0px 0px; overflow: hidden; }             Share book reviews and ratings with Mengkheang, and even join a book club on Goodreads.    </description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://www.example.com/projects/</link>
+      <link>https://james1888.github.io/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/projects/</guid>
+      <guid>https://james1888.github.io/projects/</guid>
       <description>fetch(&#39;https://api.github.com/repos/mengkheang\/esmysqlsync&#39;) .then(function(response) { return response.json(); }) .then(function(res) { var section = document.getElementsByTagName(&#34;SECTION&#34;)[1]; var wrapper = document.createElement(&#34;DIV&#34;); wrapper.id = res.id var name = document.createElement(&#34;H1&#34;); var language = document.createElement(&#34;CODE&#34;); var description = document.createElement(&#34;P&#34;); var link = document.createElement(&#34;A&#34;); var titleWrapper = document.createElement(&#34;DIV&#34;); titleWrapper.style[&#39;display&#39;] = &#39;flex&#39;; titleWrapper.style[&#39;align-items&#39;] = &#39;center&#39;; titleWrapper.appendChild(name) titleWrapper.appendChild(language) language.style[&#39;margin-left&#39;] = &#39;10px&#39;; link.href = res.html_url; link.innerHTML = res.name name.style.display = &#39;inline&#39;; name.style[&#39;height&#39;] = &#39;50px&#39;; name.appendChild(link) language.innerHTML = res.language; description.innerHTML = res.description; wrapper.</description>
     </item>
     
