@@ -88,35 +88,35 @@
 
 <p>After you saved it, you just double click on the .reg file you will be good to go.</p>
 
-<p><img src="http://i.imgur.com/Xz6Bm7W.png" alt="Open As Unity Project Windows image" title="Automator Service image" /></p>
+<p><img src="https://i.imgur.com/Xz6Bm7W.png" alt="Open As Unity Project Windows image" title="Automator Service image" /></p>
 
 <p>Finally for OS X, Open Automator and select <strong>Services</strong>.</p>
 
-<p><img src="http://i.imgur.com/GEKSMw3.png" alt="Automator Service image" title="Automator Service image" /></p>
+<p><img src="https://i.imgur.com/GEKSMw3.png" alt="Automator Service image" title="Automator Service image" /></p>
 
 <p>After that choose the dropdown item.</p>
 
-<p><img src="http://i.imgur.com/6H5zkSj.png" alt="Automator Folder image" title="Automator Folder image" /></p>
+<p><img src="https://i.imgur.com/6H5zkSj.png" alt="Automator Folder image" title="Automator Folder image" /></p>
 
 <p><strong><em>Note if you want to right click service to work in any apps, you can change the dropdown item Finder.app to any application</em></strong>.</p>
 
 <p>Then you have to add <strong>Get Selected Finder Items</strong> action to the service.</p>
 
-<p><img src="http://i.imgur.com/gscKupq.png" alt="Automator action1 image" title="Automator action1 image" /></p>
+<p><img src="https://i.imgur.com/gscKupq.png" alt="Automator action1 image" title="Automator action1 image" /></p>
 
 <p>Finally step is to add <strong>Run Shell Script</strong> action.</p>
 
-<p><img src="http://i.imgur.com/ad96p29.png" alt="Automator action2 image" title="Automator action2 image" /></p>
+<p><img src="https://i.imgur.com/ad96p29.png" alt="Automator action2 image" title="Automator action2 image" /></p>
 
 <p>The very important thing to do now is to change <em>Pass input: to stdin</em> to <em>Pass input: as arguments</em> and remove the all the text and add script command below</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath <span style="color:#0ff;font-weight:bold">&#34;</span>$1<span style="color:#0ff;font-weight:bold">&#34;</span></code></pre></div>
-<p><img src="http://i.imgur.com/DSIgiuF.png" alt="Automator action2 cmd image" title="Automator action2 cmd image" /></p>
+<p><img src="https://i.imgur.com/DSIgiuF.png" alt="Automator action2 cmd image" title="Automator action2 cmd image" /></p>
 
-<p><strong><em>Note the -projectPath option is an command line option take from <a href="http://docs.unity3d.com/Manual/CommandLineArguments.html" title="Unity Command Line Manual">Unity Command Line Manual</a> and the $1 is the first argument that are passed from the Get Selected Finder Items action</em></strong>.</p>
+<p><strong><em>Note the -projectPath option is an command line option take from <a href="https://docs.unity3d.com/Manual/CommandLineArguments.html" title="Unity Command Line Manual">Unity Command Line Manual</a> and the $1 is the first argument that are passed from the Get Selected Finder Items action</em></strong>.</p>
 
 <p>After that you save the Automator workflow by pressing <kbd>cmd</kbd>+<kbd>s</kbd> and give it a name to whatever you want. The name of the workflow will be the name of right right click item. In the image below I saved my workflow as <em>Open As Unity Project</em> so the right click item will appear as <em>Open As Unity Project</em>.</p>
 
-<p><img src="http://i.imgur.com/4h0MKKq.png" alt="Open As Unity Project image" title="Open As Unity Project image" /></p>
+<p><img src="https://i.imgur.com/4h0MKKq.png" alt="Open As Unity Project image" title="Open As Unity Project image" /></p>
 
 <p>From now on, you can open an Unity project from your right click.</p>
 
