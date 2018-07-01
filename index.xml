@@ -6,10 +6,23 @@
     <description>Recent content on James</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Nov 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jul 2018 09:21:42 +0700</lastBuildDate>
     
 	<atom:link href="https://james1888.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learn how to take advantage javascript logical operator</title>
+      <link>https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</link>
+      <pubDate>Sun, 01 Jul 2018 09:21:42 +0700</pubDate>
+      
+      <guid>https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</guid>
+      <description>Take advantage of logical operator.
+Table of Contents:
+ Logical Operator OR (||) Logical Operator AND (&amp;amp;&amp;amp;) with React  Today we will explore how to take advantage of logical operator AND (&amp;amp;&amp;amp;) and OR (||).
+Logical Operator OR (||) In Javascript logical operator OR (||) return true if either operand is true.
+true || true // true true || false // true false || false // false  Javascript logical operator they evaluate from left to right when they evaluate an OR (||) expression if the first operand is true, it will not continue to evaluate the second operand or any other operand after that.</description>
+    </item>
     
     <item>
       <title>Open Unity 5 Project With Right Click</title>

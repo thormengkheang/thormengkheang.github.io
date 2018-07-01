@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="James">
+    <meta name="description" content="John Doe&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://james1888.github.io">
+    <title>
+  Learn how to take advantage javascript logical operator · James
+</title>
+
+    <link rel="canonical" href="https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/">
+
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://james1888.github.io/css/style.min.css">
+
+    
+
+    
+      <link rel="stylesheet" href="https://james1888.github.io/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://james1888.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://james1888.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.42.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://james1888.github.io">
+      James
+    </a>
+    
+    <ul class="navigation-list  float-right ">
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://james1888.github.io/posts/">Blog</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://james1888.github.io/about/">About</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://james1888.github.io/bookshelf/">Bookshelf</a>
+      </li>
+      
+      <li class="navigation-item">
+        <a class="navigation-link" href="https://james1888.github.io/projects/">Projects</a>
+      </li>
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Learn how to take advantage javascript logical operator</h1>
+      <h2 class="date">July 1, 2018</h2>
+
+      
+    </header>
+
+    
+
+<p>Take advantage of logical operator.</p>
+
+<img src="https://source.unsplash.com/s3bgMm0fFVI/1600x900" alt="logic board">
+
+<p>Table of Contents:</p>
+
+<ul>
+<li><a href="https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/#or">Logical Operator OR (||)</a></li>
+<li><a href="https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/#and">Logical Operator AND (&amp;&amp;) with React</a></li>
+</ul>
+
+<hr />
+
+<p>Today we will explore how to take advantage of logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) and <em>OR</em> (<strong>||</strong>).</p>
+
+<h2 id="or">Logical Operator OR (||)</h2>
+
+<p>In Javascript logical operator <em>OR</em> (<strong>||</strong>) return true if either operand is true.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#fff;font-weight:bold">true</span> <span style="color:#007f7f">// true
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#fff;font-weight:bold">false</span> <span style="color:#007f7f">// true
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">false</span> || <span style="color:#fff;font-weight:bold">false</span> <span style="color:#007f7f">// false
+</span><span style="color:#007f7f"></span></code></pre></div>
+<p>Javascript logical operator they evaluate from left to right when they evaluate an <em>OR</em> (<strong>||</strong>) expression if the first operand is true, it will not continue to evaluate the second operand or any other operand after that. It means they short-circuit. So this mean the operand after the first operand can be of any value.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#0ff;font-weight:bold">&#39;any value&#39;</span> <span style="color:#007f7f">// true
+</span><span style="color:#007f7f"></span></code></pre></div>
+<p>Because of this we can use them to our advantage! For example if <code>person</code> object has property of <code>name</code> and <code>age</code> and we want to <code>console.log</code> <code>job</code> property but we don&rsquo;t know whether the object has <code>job</code> property or not.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
+    name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
+    age: <span style="color:#ff0;font-weight:bold">16</span>
+};
+
+console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemployed&#39;</span>); <span style="color:#007f7f">// unemployed
+</span><span style="color:#007f7f"></span></code></pre></div>
+<p>In the example above we <code>console.log</code> the value of <code>person.job</code> <em>OR</em> the default string of <code>unemployed</code> Since <code>person.job</code> doesn&rsquo;t exist it return <code>undefined</code> Since <code>undefined</code> is a falsy value, Javascript will instead evaluate the value of the other side of the <code>||</code> and return whatever value there.</p>
+
+<p>Let look what happen when <code>person</code> object has <code>job</code> property:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
+    name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
+    age: <span style="color:#ff0;font-weight:bold">16</span>,
+    job: <span style="color:#0ff;font-weight:bold">&#39;writer&#39;</span>
+};
+
+console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemployed&#39;</span>); <span style="color:#007f7f">// writer
+</span><span style="color:#007f7f"></span></code></pre></div>
+<p>In this time <code>person.job</code> exists. So the <em>OR</em> (<strong>||</strong>) expression return value of <code>writer</code> is logged to the console instead.</p>
+
+<p>One more example to test what we&rsquo;ve learned so far. This is a popular snippet of code from <a href="https://stackoverflow.com/questions/2100758/javascript-or-variable-assignment-explanation">Stackoverflow</a>:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a;
+<span style="color:#fff;font-weight:bold">var</span> b = <span style="color:#fff;font-weight:bold">null</span>;
+<span style="color:#fff;font-weight:bold">var</span> c = <span style="color:#fff;font-weight:bold">undefined</span>;
+<span style="color:#fff;font-weight:bold">var</span> d = <span style="color:#ff0;font-weight:bold">4</span>;
+<span style="color:#fff;font-weight:bold">var</span> e = <span style="color:#0ff;font-weight:bold">&#39;five&#39;</span>;
+
+<span style="color:#fff;font-weight:bold">var</span> f = a || b || c || d || e;
+
+console.log(f);
+</code></pre></div>
+<p>Try to answer what would be logged to the console. Scroll down for the answer&hellip;</p>
+
+<p>Is your answer <code>4</code>? Good job if not, that&rsquo;s okay too. Let break it down:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a; <span style="color:#007f7f">// undefined (falsy value)
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> b = <span style="color:#fff;font-weight:bold">null</span>; <span style="color:#007f7f">// null (falsy value)
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> c = <span style="color:#fff;font-weight:bold">undefined</span>; <span style="color:#007f7f">// undefined (falsy value)
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> d = <span style="color:#ff0;font-weight:bold">4</span>; <span style="color:#007f7f">// number (NOT falsy)
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> e = <span style="color:#0ff;font-weight:bold">&#39;five&#39;</span>; <span style="color:#007f7f">// assigment short circuits before reaching here
+</span><span style="color:#007f7f"></span>
+<span style="color:#fff;font-weight:bold">var</span> f = a || b || c || d || e;
+</code></pre></div>
+<p>All <code>a</code>, <code>b</code>, <code>c</code> are falsy value. When logical <em>OR</em> (<strong>||</strong>) return a falsy value, it continue to evaluate the next operand. When it reached <code>d</code> with value of <code>4</code> it will return the value <code>4</code> and stop evaluate the next operand and the value of <code>4</code> is assgined to varaible <code>f</code>.</p>
+
+<h2 id="and">Logical Operator AND (&amp;&amp;) with React</h2>
+
+<p>This is section we will explore how to take advantage of logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) with <strong>React</strong> or <strong>React Native</strong>. When working with <strong>React</strong> we often need to show and hide element give certian condition. This is called conditional rendering. We mostly use <strong>IF</strong> for this approach:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; {
+    <span style="color:#fff;font-weight:bold">if</span> (loading) {
+        <span style="color:#fff;font-weight:bold">return</span> &lt;<span style="font-weight:bold">p</span>&gt;loading&lt;/<span style="font-weight:bold">p</span>&gt;;
+    }
+
+    <span style="color:#fff;font-weight:bold">return</span> (
+        &lt;<span style="font-weight:bold">ul</span>&gt;
+            {data.map(item =&gt; &lt;<span style="font-weight:bold">li</span>&gt;{item.name}&lt;/<span style="font-weight:bold">li</span>&gt;)}
+        &lt;/<span style="font-weight:bold">ul</span>&gt;
+    );
+};</code></pre></div>
+<p>There is nothing wrong with the example above, on the contrary, code is simple and readable. However, this approach is restricted to render a whole block in most of the case, we can not use it.</p>
+
+<p>Imagine our component is more complex that it has a title and a button to create new item. The page should alway show the title and button. Loading message would only appear in the place of the list:</p>
+
+<p><img src="https://james1888.github.io/images/app-mockup.png" alt="app mockup" /></p>
+
+<p>Considering the image above, we can not use <strong>IF</strong> if we use <em>IF</em>, we would repeat the entire block just the change the content of list.</p>
+
+<p>We can use an expression with logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) in our JSX:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; (
+    &lt;<span style="font-weight:bold">div</span>&gt;
+        &lt;<span style="font-weight:bold">div</span>&gt;
+            &lt;<span style="font-weight:bold">h1</span>&gt;App Title&lt;/<span style="font-weight:bold">h1</span>&gt;
+            &lt;<span style="font-weight:bold">a</span> <span style="color:#007f7f">href</span>=<span style="color:#0ff;font-weight:bold">&#34;/items/create&#34;</span>&gt;New&lt;/<span style="font-weight:bold">a</span>&gt;
+        &lt;/<span style="font-weight:bold">div</span>&gt;
+        &lt;<span style="font-weight:bold">div</span>&gt;
+            {loading &amp;&amp; &lt;<span style="font-weight:bold">p</span>&gt;loading&lt;/<span style="font-weight:bold">p</span>&gt;}
+
+            {!loading &amp;&amp; (
+                &lt;<span style="font-weight:bold">ul</span>&gt;
+                {data.map((item) =&gt; (
+                    &lt;<span style="font-weight:bold">li</span> <span style="color:#007f7f">key</span>=<span style="color:#0ff;font-weight:bold">{item.id}</span>&gt;{user.item}&lt;/<span style="font-weight:bold">li</span>&gt;
+                ))}
+                &lt;/<span style="font-weight:bold">ul</span>&gt;
+            )}
+        &lt;/<span style="font-weight:bold">div</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+);</code></pre></div>
+<p>In the example, we use braces (<code>{}</code>) to insert <em>Javascript</em> expression in <em>JSX</em>. <em>React</em> will evaluate each expression and render it. <em>React</em> will not render anything it just ignores if the expression return <code>boolean</code>, <code>undefined</code> or <code>null</code>.</p>
+
+<blockquote>
+<p>React Native will not ignore <code>undefined</code> it will throw an runtime error. Just to be safe just convert the value boolean if you&rsquo;re working outside of the browser.</p>
+</blockquote>
+
+<p>To understand the example above, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators">according to MDN</a> logical operator <em>AND</em> (<strong>&amp;&amp;</strong>)</p>
+
+<blockquote>
+<p>expr1 &amp;&amp; expr2</p>
+
+<p>Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, &amp;&amp; returns true if both operands are true; otherwise, returns false.</p>
+</blockquote>
+
+<p>This mean <em>Javascript</em> will evaluate each expression until it reaches the end or it short-circuit when evaluation end up in a <strong>falsy</strong> value and the last value of the evaluation will be the result of the expression. See the example below:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">const</span> person = {
+    name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
+    address: <span style="color:#fff;font-weight:bold">null</span>,
+};
+
+console.log(person &amp;&amp; person.name) <span style="color:#007f7f">// james
+</span><span style="color:#007f7f"></span>console.log(person &amp;&amp; person.address) <span style="color:#007f7f">// null
+</span><span style="color:#007f7f"></span>console.log(person &amp;&amp; person.address &amp;&amp; person.address.zipcode <span style="color:#007f7f">// null
+</span><span style="color:#007f7f"></span></code></pre></div>
+<p>In the example expression <code>person &amp;&amp; person.name</code> since the first expression <code>person</code> is a <strong>truthy</strong> value, it continue to the second expression <code>person.name</code> since it is the last expression, the result of expression will be the value of the second expression <code>james</code>.</p>
+
+<p>In case of <code>address</code> the first expression is also a <strong>truthy</strong> value then the value of <code>person.address</code> is <code>null</code> a <strong>falsy</strong> value since it is also the last expression, it becomes the result of the expression.</p>
+
+<p>Finally in case of <code>zipCode</code> the same process as the <code>address</code> occur. It evaluate the first expression then the second. However the evaluation of the second expression is a <strong>falsy</strong> value so <em>Javascript</em> short-circuit and stop evaluate the next expression, as alway the last expression to be evaluated will be become the result of the expression. (If <em>Javascript</em> did not stop the expression it will throw an error.)</p>
+
+<blockquote>
+<p>It is important to understand how the expressions work, because sometimes you may be expecting the result to be false, and then you get null or 0. Especially when it is 0, React will render it as 0 unlike <code>boolean</code>, <code>undefined</code> or <code>null</code>.</p>
+</blockquote>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-james1888-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+     © 2018    ·  Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>. 
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
