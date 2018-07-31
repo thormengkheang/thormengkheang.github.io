@@ -6,10 +6,21 @@
     <description>Recent content in Posts on James</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jul 2018 09:21:42 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jul 2018 10:49:53 +0700</lastBuildDate>
     
 	<atom:link href="https://james1888.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Safe way to upgrade React native with link native module</title>
+      <link>https://james1888.github.io/posts/safe-way-to-upgrade-react-native/</link>
+      <pubDate>Tue, 31 Jul 2018 10:49:53 +0700</pubDate>
+      
+      <guid>https://james1888.github.io/posts/safe-way-to-upgrade-react-native/</guid>
+      <description>Upgrading React Native to a new version is not as straight forward as it turn out to be like in the documentation. Especially when you have a lot of linked native module.
+Table of Contents:
+ Introduction Steps to Upgrade  Create new branch Unlink all native modules Run the upgrade Fix merge conflict Re-link all native modules Merge upgrade branch  Conculsion  Introduction As you can see in this Github issue and a guy on youtube showing his frustration on the upgrade.</description>
+    </item>
     
     <item>
       <title>Learn how to take advantage javascript logical operator</title>
