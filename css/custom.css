@@ -8,3 +8,40 @@
     color: #222c37;
     text-shadow: none;
 }
+
+.contact-button {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #359173;
+    color: #359173;
+    background: transparent;
+    line-height: 1em;
+    padding: 0.6em 0.9em;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #2A735B;
+    outline: none;
+    box-shadow: 0 0 5px 1px #359173
+}
+
+form input, form textarea {
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    font-size: 0.8em;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.9em;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+#contact-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
