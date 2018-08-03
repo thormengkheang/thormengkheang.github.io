@@ -6,10 +6,21 @@
     <description>Recent content in Posts on James</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Jul 2018 10:49:53 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Aug 2018 13:54:48 +0700</lastBuildDate>
     
 	<atom:link href="https://james1888.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Native Prevent WebView Redirect</title>
+      <link>https://james1888.github.io/posts/react-native-prevent-webview-redirect/</link>
+      <pubDate>Fri, 03 Aug 2018 13:54:48 +0700</pubDate>
+      
+      <guid>https://james1888.github.io/posts/react-native-prevent-webview-redirect/</guid>
+      <description>When your React Native app need a quick change in small window of time, you might have consider using WebView because of the long review time on iOS App Store.
+Table of Contents:
+ Introduction iOS Android Conclusion  Introduction To prevent redirect in WebView, on iOS is super easy because there is prop that allow us to do that but unfortunately it is only available on iOS. No worry we will get to the part with Android later.</description>
+    </item>
     
     <item>
       <title>Safe way to upgrade React native with link native module</title>
@@ -19,7 +30,7 @@
       <guid>https://james1888.github.io/posts/safe-way-to-upgrade-react-native/</guid>
       <description>Upgrading React Native to a new version is not as straight forward as it turn out to be like in the documentation. Especially when you have a lot of linked native module.
 Table of Contents:
- Introduction Steps to Upgrade  Create new branch Unlink all native modules Run the upgrade Fix merge conflict Re-link all native modules Merge upgrade branch  Conculsion  Introduction As you can see in this Github issue and a guy on youtube showing his frustration on the upgrade.</description>
+ Introduction Steps to Upgrade  Create new branch Unlink all native modules Run the upgrade Fix merge conflict Re-link all native modules Merge upgrade branch  Conclusion  Introduction As you can see in this Github issue and a guy on youtube showing his frustration on the upgrade.</description>
     </item>
     
     <item>
