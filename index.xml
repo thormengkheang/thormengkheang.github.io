@@ -1,67 +1,63 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>James</title>
-    <link>https://james1888.github.io/</link>
-    <description>Recent content on James</description>
+    <title>Thor Mengkheang</title>
+    <link>https://thormengkheang.github.io/</link>
+    <description>Recent content on Thor Mengkheang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Aug 2018 13:54:48 +0700</lastBuildDate>
-    
-	<atom:link href="https://james1888.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Aug 2018 13:54:48 +0700</lastBuildDate><atom:link href="https://thormengkheang.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React Native Prevent WebView Redirect</title>
-      <link>https://james1888.github.io/posts/react-native-prevent-webview-redirect/</link>
+      <link>https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/</link>
       <pubDate>Fri, 03 Aug 2018 13:54:48 +0700</pubDate>
       
-      <guid>https://james1888.github.io/posts/react-native-prevent-webview-redirect/</guid>
+      <guid>https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/</guid>
       <description>When your React Native app need a quick change in small window of time, you might have consider using WebView because of the long review time on iOS App Store.
 Table of Contents:
- Introduction iOS Android Conclusion  Introduction To prevent redirect in WebView, on iOS is super easy because there is prop that allow us to do that but unfortunately it is only available on iOS. No worry we will get to the part with Android later.</description>
+ Introduction iOS Android Conclusion   Introduction To prevent redirect in WebView, on iOS is super easy because there is prop that allow us to do that but unfortunately it is only available on iOS. No worry we will get to the part with Android later.</description>
     </item>
     
     <item>
       <title>Safe way to upgrade React native with link native module</title>
-      <link>https://james1888.github.io/posts/safe-way-to-upgrade-react-native/</link>
+      <link>https://thormengkheang.github.io/posts/safe-way-to-upgrade-react-native/</link>
       <pubDate>Tue, 31 Jul 2018 10:49:53 +0700</pubDate>
       
-      <guid>https://james1888.github.io/posts/safe-way-to-upgrade-react-native/</guid>
+      <guid>https://thormengkheang.github.io/posts/safe-way-to-upgrade-react-native/</guid>
       <description>Upgrading React Native to a new version is not as straight forward as it turn out to be like in the documentation. Especially when you have a lot of linked native module.
 Table of Contents:
- Introduction Steps to Upgrade  Create new branch Unlink all native modules Run the upgrade Fix merge conflict Re-link all native modules Merge upgrade branch  Conclusion  Introduction As you can see in this Github issue and a guy on youtube showing his frustration on the upgrade.</description>
+ Introduction Steps to Upgrade  Create new branch Unlink all native modules Run the upgrade Fix merge conflict Re-link all native modules Merge upgrade branch   Conclusion   Introduction As you can see in this Github issue and a guy on youtube showing his frustration on the upgrade.</description>
     </item>
     
     <item>
       <title>Learn how to take advantage javascript logical operator</title>
-      <link>https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</link>
+      <link>https://thormengkheang.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</link>
       <pubDate>Sun, 01 Jul 2018 09:21:42 +0700</pubDate>
       
-      <guid>https://james1888.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</guid>
+      <guid>https://thormengkheang.github.io/posts/learn-how-to-take-advantage-of-javascript-logical-operator/</guid>
       <description>Take advantage of logical operator.
 Table of Contents:
- Logical Operator OR (||) Logical Operator AND (&amp;amp;&amp;amp;) with React  Today we will explore how to take advantage of logical operator AND (&amp;amp;&amp;amp;) and OR (||).
+ Logical Operator OR (||) Logical Operator AND (&amp;amp;&amp;amp;) with React   Today we will explore how to take advantage of logical operator AND (&amp;amp;&amp;amp;) and OR (||).
 Logical Operator OR (||) In Javascript logical operator OR (||) return true if either operand is true.
-true || true // true true || false // true false || false // false  Javascript logical operator they evaluate from left to right when they evaluate an OR (||) expression if the first operand is true, it will not continue to evaluate the second operand or any other operand after that.</description>
+true || true // true true || false // true false || false // false Javascript logical operator they evaluate from left to right when they evaluate an OR (||) expression if the first operand is true, it will not continue to evaluate the second operand or any other operand after that.</description>
     </item>
     
     <item>
       <title>Open Unity Project With Context Menu</title>
-      <link>https://james1888.github.io/posts/open-unity-project-with-context-menu/</link>
+      <link>https://thormengkheang.github.io/posts/open-unity-project-with-context-menu/</link>
       <pubDate>Sun, 29 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://james1888.github.io/posts/open-unity-project-with-context-menu/</guid>
+      <guid>https://thormengkheang.github.io/posts/open-unity-project-with-context-menu/</guid>
       <description>Are you tired of having to open Unity3D to open your Unity3D project or sometimes you have to open Unity3D and press Open and search for your Unity3D project. Well no more, I found this awesome trick that would make opening Unity3D project way for more easier on both Windows and OS X.
 First off, On Windows this is from Adam Tuliper an Developer Evangelist for Microsoft blog. It&amp;rsquo;s just registry file.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://james1888.github.io/about/</link>
+      <link>https://thormengkheang.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://james1888.github.io/about/</guid>
+      <guid>https://thormengkheang.github.io/about/</guid>
       <description>Work Experience At Mediaload PTE. LTD Mobile App Developer (React Native) 2018 Feburary to Present
 Building Mobile App for Little Fashion (L192) App Store and Play Store.
 At Pathmazing Backend Developer (Node.js) 2017 August to November
@@ -74,29 +70,29 @@ Graduated Bachelor Degree in major Computer Science.</description>
     
     <item>
       <title>Bookshelf</title>
-      <link>https://james1888.github.io/bookshelf/</link>
+      <link>https://thormengkheang.github.io/bookshelf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://james1888.github.io/bookshelf/</guid>
+      <guid>https://thormengkheang.github.io/bookshelf/</guid>
       <description>All the books that I&amp;rsquo;ve read.
 .gr_grid_container { } .gr_grid_book_container { float: left; width: 98px; height: 160px; padding: 0px 0px; overflow: hidden; }             Share book reviews and ratings with James, and even join a book club on Goodreads.    </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://james1888.github.io/contact/</link>
+      <link>https://thormengkheang.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://james1888.github.io/contact/</guid>
-      <description> Send   </description>
+      <guid>https://thormengkheang.github.io/contact/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://james1888.github.io/projects/</link>
+      <link>https://thormengkheang.github.io/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://james1888.github.io/projects/</guid>
+      <guid>https://thormengkheang.github.io/projects/</guid>
       <description>fetch(&#39;https://api.github.com/repos/mengkheang\/esmysqlsync&#39;) .then(function(response) { return response.json(); }) .then(function(res) { var section = document.getElementsByTagName(&#34;SECTION&#34;)[1]; var wrapper = document.createElement(&#34;DIV&#34;); wrapper.id = res.id var name = document.createElement(&#34;H1&#34;); var language = document.createElement(&#34;CODE&#34;); var description = document.createElement(&#34;P&#34;); var link = document.createElement(&#34;A&#34;); var titleWrapper = document.createElement(&#34;DIV&#34;); titleWrapper.style[&#39;display&#39;] = &#39;flex&#39;; titleWrapper.style[&#39;align-items&#39;] = &#39;center&#39;; titleWrapper.appendChild(name) titleWrapper.appendChild(language) language.style[&#39;margin-left&#39;] = &#39;10px&#39;; link.href = res.html_url; link.innerHTML = res.name name.style.display = &#39;inline&#39;; name.style[&#39;height&#39;] = &#39;50px&#39;; name.appendChild(link) language.innerHTML = res.language; description.innerHTML = res.description; wrapper.</description>
     </item>
     

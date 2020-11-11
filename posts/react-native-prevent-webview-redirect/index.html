@@ -5,60 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="James">
-    <meta name="description" content="James&#39;s personal website">
+    <meta name="author" content="Thor Mengkheang">
+    <meta name="description" content="Thor Mengkheang&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
-    <base href="https://james1888.github.io">
+    <base href="https://thormengkheang.github.io">
     <title>
-  React Native Prevent WebView Redirect · James
+  React Native Prevent WebView Redirect · Thor Mengkheang
 </title>
 
-    <link rel="canonical" href="https://james1888.github.io/posts/react-native-prevent-webview-redirect/">
+    <link rel="canonical" href="https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/">
 
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
     <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://james1888.github.io/css/style.min.css">
+    <link rel="stylesheet" href="https://thormengkheang.github.io/css/style.min.css">
 
     
 
     
-      <link rel="stylesheet" href="https://james1888.github.io/css/custom.css">
+      <link rel="stylesheet" href="https://thormengkheang.github.io/css/custom.css">
     
 
-    <link rel="icon" type="image/png" href="https://james1888.github.io/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://james1888.github.io/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://thormengkheang.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://thormengkheang.github.io/images/favicon-16x16.png" sizes="16x16">
 
     
 
-    <meta name="generator" content="Hugo 0.42.2" />
+    <meta name="generator" content="Hugo 0.78.1" />
   </head>
 
   <body class="">
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="https://james1888.github.io">
-      James
+    <a class="navigation-title" href="https://thormengkheang.github.io">
+      Thor Mengkheang
     </a>
     
     <ul class="navigation-list  float-right ">
       
       <li class="navigation-item">
-        <a class="navigation-link" href="https://james1888.github.io/posts/">Blog</a>
+        <a class="navigation-link" href="https://thormengkheang.github.io/posts/">Blog</a>
       </li>
       
       <li class="navigation-item">
-        <a class="navigation-link" href="https://james1888.github.io/about/">About</a>
+        <a class="navigation-link" href="https://thormengkheang.github.io/about/">About</a>
       </li>
       
       <li class="navigation-item">
-        <a class="navigation-link" href="https://james1888.github.io/bookshelf/">Bookshelf</a>
+        <a class="navigation-link" href="https://thormengkheang.github.io/bookshelf/">Bookshelf</a>
       </li>
       
       <li class="navigation-item">
-        <a class="navigation-link" href="https://james1888.github.io/projects/">Projects</a>
+        <a class="navigation-link" href="https://thormengkheang.github.io/projects/">Projects</a>
       </li>
       
     </ul>
@@ -78,37 +78,25 @@
       
     </header>
 
-    
-
-<p>When your React Native app need a quick change in small window of time,
+    <p>When your React Native app need a quick change in small window of time,
 you might have consider using <a href="https://facebook.github.io/react-native/docs/webview">WebView</a>
 because of the long review time on iOS App Store.</p>
-
 <img src="https://source.unsplash.com/e31ANd1PXUw/" alt="iphone">
-
 <p>Table of Contents:</p>
-
 <ul>
-<li><a href="https://james1888.github.io/posts/react-native-prevent-webview-redirect/#introduction">Introduction</a></li>
-<li><a href="https://james1888.github.io/posts/react-native-prevent-webview-redirect/#ios">iOS</a></li>
-<li><a href="https://james1888.github.io/posts/react-native-prevent-webview-redirect/#android">Android</a></li>
-<li><a href="https://james1888.github.io/posts/react-native-prevent-webview-redirect/#conclusion">Conclusion</a></li>
+<li><a href="https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/#introduction">Introduction</a></li>
+<li><a href="https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/#ios">iOS</a></li>
+<li><a href="https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/#android">Android</a></li>
+<li><a href="https://thormengkheang.github.io/posts/react-native-prevent-webview-redirect/#conclusion">Conclusion</a></li>
 </ul>
-
-<hr />
-
+<hr>
 <h2 id="introduction">Introduction</h2>
-
 <p>To prevent redirect in WebView, on iOS is super easy because there is prop that allow us to do that
 but unfortunately it is only available on iOS. No worry we will get to the part with Android later.</p>
-
 <h2 id="ios">iOS</h2>
-
 <p>On iOS, it is super easy and straight forward. There is a props <strong><a href="https://facebook.github.io/react-native/docs/webview#onshouldstartloadwithrequest">onShouldStartLoadWithRequest</a></strong>
 that allow us to determine whether we should load the webview or not depending on the condition.</p>
-
-<p><img src="https://james1888.github.io/images/onShouldStartLoadWithRequest.png" alt="onShouldStartLoadWithRequest props" /></p>
-
+<p><img src="https://thormengkheang.github.io/images/onShouldStartLoadWithRequest.png" alt="onShouldStartLoadWithRequest props"></p>
 <p>Let go see the example:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">import</span> React, {Component} from <span style="color:#0ff;font-weight:bold">&#39;react&#39;</span>;
 <span style="color:#fff;font-weight:bold">import</span> {WebView} from <span style="color:#0ff;font-weight:bold">&#39;react-native&#39;</span>;
@@ -120,24 +108,20 @@ that allow us to determine whether we should load the webview or not depending o
     <span style="color:#fff;font-weight:bold">const</span> {url, ...props} = <span style="color:#fff;font-weight:bold">this</span>.props;
     <span style="color:#fff;font-weight:bold">return</span> &lt;<span style="font-weight:bold">WebView</span>
       {<span style="color:#007f7f">...props</span>}
-      <span style="color:#007f7f">source</span>=<span style="color:#0ff;font-weight:bold">{{uri:</span> <span style="color:#007f7f">url</span>}}
-      <span style="color:#007f7f">onShouldStartLoadWithRequest</span>=<span style="color:#0ff;font-weight:bold">{this.shouldStartLoadWithRequestHandler}</span>
+      <span style="color:#007f7f">source</span>={{uri: url}}
+      <span style="color:#007f7f">onShouldStartLoadWithRequest</span>={<span style="color:#fff;font-weight:bold">this</span>.shouldStartLoadWithRequestHandler}
     /&gt;
   }
-}</code></pre></div>
-<p>As you can see the example above in the <strong>shouldStartLoadWithRequestHandler</strong> it should only load the webview
+}
+</code></pre></div><p>As you can see the example above in the <strong>shouldStartLoadWithRequestHandler</strong> it should only load the webview
 when the url is the same as our <strong>url</strong> props. You can also allow the webview whitelist other url other than our <strong>url</strong> props by changing <strong>shouldStartLoadWithRequestHandler</strong>.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">shouldStartLoadWithRequestHandler = ({url}) =&gt; {
   <span style="color:#fff;font-weight:bold">return</span> url === <span style="color:#fff;font-weight:bold">this</span>.props.url || <span style="color:#fff;font-weight:bold">this</span>.props.whitelist.includes(url);
 };
-</code></pre></div>
-<h2 id="android">Android</h2>
-
+</code></pre></div><h2 id="android">Android</h2>
 <p>On Android, there is no <strong><a href="https://facebook.github.io/react-native/docs/webview#onshouldstartloadwithrequest">onShouldStartLoadWithRequest</a></strong>
 props, so we have to make use of <strong><a href="https://facebook.github.io/react-native/docs/webview#onnavigationstatechange">onNavigationStateChange</a></strong> props.</p>
-
-<p><img src="https://james1888.github.io/images/onNavigationStateChange.png" alt="onNavigationStateChange props" /></p>
-
+<p><img src="https://thormengkheang.github.io/images/onNavigationStateChange.png" alt="onNavigationStateChange props"></p>
 <p>Let go see the example:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">import</span> React, {Component} from <span style="color:#0ff;font-weight:bold">&#39;react&#39;</span>;
 <span style="color:#fff;font-weight:bold">import</span> {WebView} from <span style="color:#0ff;font-weight:bold">&#39;react-native&#39;</span>;
@@ -153,55 +137,31 @@ props, so we have to make use of <strong><a href="https://facebook.github.io/rea
     <span style="color:#fff;font-weight:bold">const</span> {url, ...props} = <span style="color:#fff;font-weight:bold">this</span>.props;
     <span style="color:#fff;font-weight:bold">return</span> &lt;<span style="font-weight:bold">WebView</span>
       {<span style="color:#007f7f">...props</span>}
-      <span style="color:#007f7f">source</span>=<span style="color:#0ff;font-weight:bold">{{uri:</span> <span style="color:#007f7f">url</span>}}
-      <span style="color:#007f7f">onNavigationStateChange</span>=<span style="color:#0ff;font-weight:bold">{this.navigationStateChangedHandler}</span>
-      <span style="color:#007f7f">ref</span>=<span style="color:#0ff;font-weight:bold">{c</span> <span style="color:#f00">=</span>&gt; {
+      <span style="color:#007f7f">source</span>={{uri: url}}
+      <span style="color:#007f7f">onNavigationStateChange</span>={<span style="color:#fff;font-weight:bold">this</span>.navigationStateChangedHandler}
+      <span style="color:#007f7f">ref</span>={c =&gt; {
         <span style="color:#fff;font-weight:bold">this</span>.WebView = c;
       }}
-    <span style="color:#f00">/&gt;</span>
+    /&gt;
   }
-}</code></pre></div>
-<p>As you can see in the example, we set ref from our webview to <em><strong>this.WebView</strong></em>.
+}
+</code></pre></div><p>As you can see in the example, we set ref from our webview to <em><strong>this.WebView</strong></em>.
 It is a little different in <strong><a href="https://facebook.github.io/react-native/docs/webview#onnavigationstatechange">onNavigationStateChange</a></strong> props than
 <strong><a href="https://facebook.github.io/react-native/docs/webview#onshouldstartloadwithrequest">onShouldStartLoadWithRequest</a></strong> props. We need the ref because
 we need to use the webview method <strong><a href="https://facebook.github.io/react-native/docs/webview#stoploading">stopLoading()</a></strong>. In <strong>navigationStateChangedHandler</strong>
 what we are doing is if the url is not the same as our <strong>url</strong> props, we will stop the webview from loading. You might wondering why do we need to check
- if our url string start with <strong>https://</strong> because with project I am working in, we use <a href="https://reactnavigation.org/">React Navigation</a> and <a href="https://reactnavigation.org/">React Navigation</a>
- also use <strong>onNavigationStateChange</strong> when we navigate between screen but <a href="https://reactnavigation.org/">React Navigation</a> use the different protocol other than <strong>https</strong> protocol
- that why we need to check it if you are not using <a href="https://reactnavigation.org/">React Navigation</a> you can remove the check.</p>
-
+if our url string start with <strong>https://</strong> because with project I am working in, we use <a href="https://reactnavigation.org/">React Navigation</a> and <a href="https://reactnavigation.org/">React Navigation</a>
+also use <strong>onNavigationStateChange</strong> when we navigate between screen but <a href="https://reactnavigation.org/">React Navigation</a> use the different protocol other than <strong>https</strong> protocol
+that why we need to check it if you are not using <a href="https://reactnavigation.org/">React Navigation</a> you can remove the check.</p>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>I am pretty happy with the result for now. All the source code is available at <a href="https://github.com/james1888/prevent-webview-redirect">Github</a>.
- Here are the demo the top view is a custom webview that prevent redirect and the bottom view is just a normal view.</p>
-
-<p><img src="https://james1888.github.io/images/prevent-redirect-webview.gif" alt="prevent-redirect-webview gif" /></p>
+Here are the demo the top view is a custom webview that prevent redirect and the bottom view is just a normal view.</p>
+<p><img src="https://thormengkheang.github.io/images/prevent-redirect-webview.gif" alt="prevent-redirect-webview gif"></p>
 
   </article>
 
   <br/>
 
-  
-      <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "https-james1888-github-io" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   
   
 </section>
@@ -217,7 +177,7 @@ what we are doing is if the url is not the same as our <strong>url</strong> prop
     </main>
 
     
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
