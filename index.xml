@@ -84,7 +84,7 @@ Graduated Bachelor Degree in major Computer Science.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thormengkheang.github.io/contact/</guid>
-      <description></description>
+      <description> Send   </description>
     </item>
     
     <item>
@@ -93,7 +93,7 @@ Graduated Bachelor Degree in major Computer Science.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thormengkheang.github.io/projects/</guid>
-      <description>fetch(&#39;https://api.github.com/repos/mengkheang\/esmysqlsync&#39;) .then(function(response) { return response.json(); }) .then(function(res) { var section = document.getElementsByTagName(&#34;SECTION&#34;)[1]; var wrapper = document.createElement(&#34;DIV&#34;); wrapper.id = res.id var name = document.createElement(&#34;H1&#34;); var language = document.createElement(&#34;CODE&#34;); var description = document.createElement(&#34;P&#34;); var link = document.createElement(&#34;A&#34;); var titleWrapper = document.createElement(&#34;DIV&#34;); titleWrapper.style[&#39;display&#39;] = &#39;flex&#39;; titleWrapper.style[&#39;align-items&#39;] = &#39;center&#39;; titleWrapper.appendChild(name) titleWrapper.appendChild(language) language.style[&#39;margin-left&#39;] = &#39;10px&#39;; link.href = res.html_url; link.innerHTML = res.name name.style.display = &#39;inline&#39;; name.style[&#39;height&#39;] = &#39;50px&#39;; name.appendChild(link) language.innerHTML = res.language; description.innerHTML = res.description; wrapper.</description>
+      <description>fetch(&#39;https://api.github.com/repos/thormengkheang\/esmysqlsync&#39;) .then(function(response) { return response.json(); }) .then(function(res) { var section = document.getElementsByTagName(&#34;SECTION&#34;)[1]; var wrapper = document.createElement(&#34;DIV&#34;); wrapper.id = res.id var name = document.createElement(&#34;H1&#34;); var language = document.createElement(&#34;CODE&#34;); var description = document.createElement(&#34;P&#34;); var link = document.createElement(&#34;A&#34;); var titleWrapper = document.createElement(&#34;DIV&#34;); titleWrapper.style[&#39;display&#39;] = &#39;flex&#39;; titleWrapper.style[&#39;align-items&#39;] = &#39;center&#39;; titleWrapper.appendChild(name) titleWrapper.appendChild(language) language.style[&#39;margin-left&#39;] = &#39;10px&#39;; link.href = res.html_url; link.innerHTML = res.name name.style.display = &#39;inline&#39;; name.style[&#39;height&#39;] = &#39;50px&#39;; name.appendChild(link) language.innerHTML = res.language; description.innerHTML = res.description; wrapper.</description>
     </item>
     
   </channel>
