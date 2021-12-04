@@ -33,7 +33,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.78.1" />
+    <meta name="generator" content="Hugo 0.89.4" />
   </head>
 
   <body class="">
@@ -94,13 +94,13 @@
 <p>Today we will explore how to take advantage of logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) and <em>OR</em> (<strong>||</strong>).</p>
 <h2 id="or">Logical Operator OR (||)</h2>
 <p>In Javascript logical operator <em>OR</em> (<strong>||</strong>) return true if either operand is true.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#fff;font-weight:bold">true</span> <span style="color:#007f7f">// true
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#fff;font-weight:bold">true</span> <span style="color:#007f7f">// true
 </span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#fff;font-weight:bold">false</span> <span style="color:#007f7f">// true
 </span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">false</span> || <span style="color:#fff;font-weight:bold">false</span> <span style="color:#007f7f">// false
 </span></code></pre></div><p>Javascript logical operator they evaluate from left to right when they evaluate an <em>OR</em> (<strong>||</strong>) expression if the first operand is true, it will not continue to evaluate the second operand or any other operand after that. It means they short-circuit. So this mean the operand after the first operand can be of any value.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#0ff;font-weight:bold">&#39;any value&#39;</span> <span style="color:#007f7f">// true
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">true</span> || <span style="color:#0ff;font-weight:bold">&#39;any value&#39;</span> <span style="color:#007f7f">// true
 </span></code></pre></div><p>Because of this we can use them to our advantage! For example if <code>person</code> object has property of <code>name</code> and <code>age</code> and we want to <code>console.log</code> <code>job</code> property but we don&rsquo;t know whether the object has <code>job</code> property or not.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
     name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
     age: <span style="color:#ff0;font-weight:bold">16</span>
 };
@@ -108,7 +108,7 @@
 console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemployed&#39;</span>); <span style="color:#007f7f">// unemployed
 </span></code></pre></div><p>In the example above we <code>console.log</code> the value of <code>person.job</code> <em>OR</em> the default string of <code>unemployed</code> Since <code>person.job</code> doesn&rsquo;t exist it return <code>undefined</code> Since <code>undefined</code> is a falsy value, Javascript will instead evaluate the value of the other side of the <code>||</code> and return whatever value there.</p>
 <p>Let look what happen when <code>person</code> object has <code>job</code> property:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> person = {
     name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
     age: <span style="color:#ff0;font-weight:bold">16</span>,
     job: <span style="color:#0ff;font-weight:bold">&#39;writer&#39;</span>
@@ -117,7 +117,7 @@ console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemplo
 console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemployed&#39;</span>); <span style="color:#007f7f">// writer
 </span></code></pre></div><p>In this time <code>person.job</code> exists. So the <em>OR</em> (<strong>||</strong>) expression return value of <code>writer</code> is logged to the console instead.</p>
 <p>One more example to test what we&rsquo;ve learned so far. This is a popular snippet of code from <a href="https://stackoverflow.com/questions/2100758/javascript-or-variable-assignment-explanation">Stackoverflow</a>:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a;
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a;
 <span style="color:#fff;font-weight:bold">var</span> b = <span style="color:#fff;font-weight:bold">null</span>;
 <span style="color:#fff;font-weight:bold">var</span> c = <span style="color:#fff;font-weight:bold">undefined</span>;
 <span style="color:#fff;font-weight:bold">var</span> d = <span style="color:#ff0;font-weight:bold">4</span>;
@@ -128,7 +128,7 @@ console.log(person.job || <span style="color:#0ff;font-weight:bold">&#39;unemplo
 console.log(f);
 </code></pre></div><p>Try to answer what would be logged to the console. Scroll down for the answer&hellip;</p>
 <p>Is your answer <code>4</code>? Good job if not, that&rsquo;s okay too. Let break it down:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a; <span style="color:#007f7f">// undefined (falsy value)
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">var</span> a; <span style="color:#007f7f">// undefined (falsy value)
 </span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> b = <span style="color:#fff;font-weight:bold">null</span>; <span style="color:#007f7f">// null (falsy value)
 </span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> c = <span style="color:#fff;font-weight:bold">undefined</span>; <span style="color:#007f7f">// undefined (falsy value)
 </span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">var</span> d = <span style="color:#ff0;font-weight:bold">4</span>; <span style="color:#007f7f">// number (NOT falsy)
@@ -138,7 +138,7 @@ console.log(f);
 </code></pre></div><p>All <code>a</code>, <code>b</code>, <code>c</code> are falsy value. When logical <em>OR</em> (<strong>||</strong>) return a falsy value, it continue to evaluate the next operand. When it reached <code>d</code> with value of <code>4</code> it will return the value <code>4</code> and stop evaluate the next operand and the value of <code>4</code> is assgined to varaible <code>f</code>.</p>
 <h2 id="and">Logical Operator AND (&amp;&amp;) with React</h2>
 <p>This is section we will explore how to take advantage of logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) with <strong>React</strong> or <strong>React Native</strong>. When working with <strong>React</strong> we often need to show and hide element give certian condition. This is called conditional rendering. We mostly use <strong>IF</strong> for this approach:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; {
     <span style="color:#fff;font-weight:bold">if</span> (loading) {
         <span style="color:#fff;font-weight:bold">return</span> &lt;<span style="font-weight:bold">p</span>&gt;loading&lt;/<span style="font-weight:bold">p</span>&gt;;
     }
@@ -154,7 +154,7 @@ console.log(f);
 <p><img src="https://thormengkheang.github.io/images/app-mockup.png" alt="app mockup"></p>
 <p>Considering the image above, we can not use <strong>IF</strong> if we use <em>IF</em>, we would repeat the entire block just the change the content of list.</p>
 <p>We can use an expression with logical operator <em>AND</em> (<strong>&amp;&amp;</strong>) in our JSX:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; (
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#fff;font-weight:bold">const</span> MyComponent = ({ loading, data }) =&gt; (
     &lt;<span style="font-weight:bold">div</span>&gt;
         &lt;<span style="font-weight:bold">div</span>&gt;
             &lt;<span style="font-weight:bold">h1</span>&gt;App Title&lt;/<span style="font-weight:bold">h1</span>&gt;
@@ -185,7 +185,7 @@ console.log(f);
 <p>Returns expr1 if it can be converted to false; otherwise, returns expr2. Thus, when used with Boolean values, &amp;&amp; returns true if both operands are true; otherwise, returns false.</p>
 </blockquote>
 <p>This mean <em>Javascript</em> will evaluate each expression until it reaches the end or it short-circuit when evaluation end up in a <strong>falsy</strong> value and the last value of the evaluation will be the result of the expression. See the example below:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">const</span> person = {
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#fff;font-weight:bold">const</span> person = {
     name: <span style="color:#0ff;font-weight:bold">&#39;james&#39;</span>,
     address: <span style="color:#fff;font-weight:bold">null</span>,
 };
@@ -231,7 +231,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
   </body>
 

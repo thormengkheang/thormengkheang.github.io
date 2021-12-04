@@ -33,7 +33,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.78.1" />
+    <meta name="generator" content="Hugo 0.89.4" />
   </head>
 
   <body class="">
@@ -100,7 +100,7 @@
 <p>Finally step is to add <strong>Run Shell Script</strong> action.</p>
 <p><img src="https://i.imgur.com/ad96p29.png" alt="Automator action2 image" title="Automator action2 image"></p>
 <p>The very important thing to do now is to change <em>Pass input: to stdin</em> to <em>Pass input: as arguments</em> and remove the all the text and add script command below</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath <span style="color:#0ff;font-weight:bold">&#34;</span>$1<span style="color:#0ff;font-weight:bold">&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/Applications/Unity/Unity.app/Contents/MacOS/Unity -projectPath <span style="color:#0ff;font-weight:bold">&#34;</span>$1<span style="color:#0ff;font-weight:bold">&#34;</span>
 </code></pre></div><p><img src="https://i.imgur.com/DSIgiuF.png" alt="Automator action2 cmd image" title="Automator action2 cmd image"></p>
 <p><strong><em>Note the -projectPath option is an command line option take from <a href="https://docs.unity3d.com/Manual/CommandLineArguments.html" title="Unity Command Line Manual">Unity Command Line Manual</a> and the $1 is the first argument that are passed from the Get Selected Finder Items action</em></strong>.</p>
 <p>After that you save the Automator workflow by pressing <!-- raw HTML omitted -->cmd<!-- raw HTML omitted -->+<!-- raw HTML omitted -->s<!-- raw HTML omitted --> and give it a name to whatever you want. The name of the workflow will be the name of right right click item. In the image below I saved my workflow as <em>Open As Unity Project</em> so the right click item will appear as <em>Open As Unity Project</em>.</p>
@@ -138,7 +138,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
   </body>
 

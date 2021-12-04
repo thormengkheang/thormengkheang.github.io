@@ -33,7 +33,7 @@
 
     
 
-    <meta name="generator" content="Hugo 0.78.1" />
+    <meta name="generator" content="Hugo 0.89.4" />
   </head>
 
   <body class="">
@@ -127,19 +127,19 @@
 </ul>
 <h3 id="create-new-branch">1. Create new branch</h3>
 <p>We create new branch for the process of undoing steps just in case there are issues with the native module.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git checkout -b upgrade-react-native
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git checkout -b upgrade-react-native
 </code></pre></div><h3 id="unlink-all-native-modules">2. Unlink all native modules</h3>
 <p>Unlinking all packages minimize the number of differences in the upgrade. In theory, this should make merging much easier.</p>
 <p>The easiest way to unlink all your native modules is to copy all the package names in <strong>dependencies</strong> of <strong>package.json</strong>. Even though some of the packages are not native module, it would not change anything if the package do not need linking.</p>
 <p><img src="https://thormengkheang.github.io/images/package-dependencies.png" alt="package dependencies"></p>
 <p>Then just paste them all in the console.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ react-native unlink react-native-camera
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ react-native unlink react-native-camera
 $ react-native unlink react-native-confirmation-code-input
 $ react-native unlink react-native-device-info
 $ react-native unlink react-native-google-analytics
 ...
 </code></pre></div><p>After you have unlink all the packages, it is time to commit our change.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git commit -m <span style="color:#0ff;font-weight:bold">&#34;unlinked all packages in preparation for upgrade&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git commit -m <span style="color:#0ff;font-weight:bold">&#34;unlinked all packages in preparation for upgrade&#34;</span>
 </code></pre></div><h3 id="run-the-upgrade">3. Run the upgrade</h3>
 <p>Follow the instruction from the React Native website <a href="https://facebook.github.io/react-native/docs/upgrading.html">here</a>.</p>
 <h3 id="fix-merge-conflict">4. Fix merge conflict</h3>
@@ -148,7 +148,7 @@ $ react-native unlink react-native-google-analytics
 <h3 id="re-link-all-native-modules">5. Re-link all native modules</h3>
 <p>After you are able to open your xcode project again, now it is time to re-link your native modules.</p>
 <p>Do the opposite of <a href="https://thormengkheang.github.io/posts/safe-way-to-upgrade-react-native/#unlink-all-native-modules">Step 2</a>.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ react-native link react-native-camera
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ react-native link react-native-camera
 $ react-native link react-native-confirmation-code-input
 $ react-native link react-native-device-info
 $ react-native link react-native-google-analytics
@@ -189,7 +189,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
   </body>
 
