@@ -4,46 +4,22 @@ Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's b
 
 The theme has no JavaScript integration out of the box, but can always be added of course.
 
-This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
-
-## Usage
-
-You can bootstrap a new Astro project using Brutal with the following command:
-
-```bash
-# npm 6.x
-npx create astro@latest --template eliancodes/brutal
-
-# npm 7+
-npx create astro@latest -- --template eliancodes/brutal
-
-# pnpm
-pnpm dlx create-astro --template eliancodes/brutal
-
-# yarn
-yarn create astro --template eliancodes/brutal
-```
+This template is based on [elian.codes](<https://www.elian.codes/>).
 
 ### Commands
 
 All commands are run from the root of the project, from a terminal:
 
-(Here I use PNPM, no problem if you use NPM or Yarn)
-
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
-| `pnpm install`      | Installs dependencies                              |
-| `pnpm dev`          | Starts local dev server at `localhost:3000`        |
-| `pnpm build`        | Build your production site to `./dist/`            |
-| `pnpm preview`      | Preview your build locally, before deploying       |
-| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `pnpm astro --help` | Get help using the Astro CLI                       |
+| `yarn install`      | Installs dependencies                              |
+| `yarn dev`          | Starts local dev server at `localhost:3000`        |
+| `yarn build`        | Build your production site to `./dist/`            |
+| `yarn preview`      | Preview your build locally, before deploying       |
+| `yarn astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `yarn astro --help` | Get help using the Astro CLI                       |
 
 ## Integrations
-
-### UnoCSS
-
-In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
 
 ### Sitemap
 

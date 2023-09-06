@@ -4,11 +4,11 @@
   "type": "module",
   "packageManager": "yarn@1.22.19",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "Mengkheang Thor",
+    "email": "thormengkheang@gmail.com",
+    "url": "https://thormengkheang.github.io/"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://thormengkheang.github.io",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
