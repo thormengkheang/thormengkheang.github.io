@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   // used to generate images
   site:
-    process.env.VERCEL_ENV === 'production' ? 'https://brutal.elian.codes/' : process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}/` : 'https://localhost:3000/',
+    process.env.VERCEL_ENV === 'production' ? 'https://thormengkheang.github.io/' : 'https://localhost:3000/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), tailwind()],
   vite: {
