@@ -23,7 +23,7 @@ const { title, description, ogImage } = Astro.props;
 
   <link
     rel='alternate'
-    href='https://brutal.elian.codes/blog.xml'
+    href='https://thormengkheang.github.io/blog.xml'
     type='application/rss+xml'
   />
 
@@ -32,7 +32,7 @@ const { title, description, ogImage } = Astro.props;
 
   <meta property='og:type' content='website' />
   <meta property='og:url' content={canonicalURL} />
-  <meta property='og:title' content={title} />
+  <meta property='og:title' content={`KheangCodes | ${title}`} />
   <meta property='og:description' content={description} />
   <meta property='og:image' content={ogImage} />
 
@@ -45,7 +45,7 @@ const { title, description, ogImage } = Astro.props;
   <link rel='canonical' href={canonicalURL} />
   <link rel='icon' type='image/svg' href='/favicon.svg' />
 
-  <title>{title}</title>
+  <title>{`KheangCodes | ${title}`}</title>
 
   <ViewTransitions />
 
