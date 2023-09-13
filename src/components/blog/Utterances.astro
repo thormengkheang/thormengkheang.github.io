@@ -1,0 +1,19 @@
+<div id="utterances-container" class="pt-4"></div>
+
+<script async>
+const script = document.createElement("script");
+const container = document.querySelector("#utterances-container");
+
+Object.entries({
+    src: "https://utteranc.es/client.js",
+    repo: "thormengkheang/thormengkheang.github.io",
+    "issue-term": "pathname",
+    label: "utterances",
+    theme: "github-light",
+    crossorigin: "anonymous",
+}).forEach(([key, value]) => {
+    script.setAttribute(key, value);
+});
+
+container?.appendChild(script);
+</script>

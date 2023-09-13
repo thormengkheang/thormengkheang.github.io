@@ -1,9 +1,11 @@
----
+---import Utterances from './Utterances.astro';
+
 interface Props {
   content: any;
+  comment: boolean;
 }
 
-const { content } = Astro.props;
+const { content, comment } = Astro.props;
 const dateOptions: object = {
   year: "numeric",
   month: "long",
@@ -24,4 +26,5 @@ const formattedPublishDate = new Date(content.pubDate).toLocaleDateString(
   <slot />
   <p class="text-slate-400">Written by {content.author}</p>
   <a href="/blog/" title="Back to blog">&larr; Back to blog</a>
+  {comment && <Utterances />}
 </article>
