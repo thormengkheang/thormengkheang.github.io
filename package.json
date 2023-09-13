@@ -17,11 +17,13 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.0.3",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "@egoist/tailwindcss-icons": "^1.1.0",
     "@eliancodes/brutal-ui": "^0.2.2",
+    "@iconify-json/uil": "^1.1.5",
     "@tailwindcss/typography": "^0.5.10",
     "astro": "^3.0.6",
     "satori": "^0.5.0",
@@ -29,8 +31,6 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.1.35",
-    "@iconify-json/uil": "^1.1.5",
     "@resvg/resvg-js": "^2.4.1",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
