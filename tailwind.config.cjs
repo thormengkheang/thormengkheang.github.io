@@ -10,7 +10,7 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		iconsPlugin({
 			// Select the icon collections you want to use
-			collections: getIconCollections(["uil", "logos"]),
+			collections: getIconCollections(["uil"]),
 		}),
 	],
 }
