@@ -1,6 +1,6 @@
 ---
 title: 🌐 6 Popular API Architecture Styles 🏗️
-pubDate: 13/09/2023 14:25
+pubDate: 09/13/2023 14:25 # MM/DD/YYYY HH:MM
 author: "Mengkheang Thor"
 tags:
   - API
