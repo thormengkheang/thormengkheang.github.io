@@ -1,6 +1,6 @@
 ---
 title: "🧹 10 Linting Rules for Writing Better Asynchronous Code"
-pubDate: 12/09/2022 14:25
+pubDate: 12/09/2023 14:25
 author: "Mengkheang Thor"
 tags:
   - JavaScript
