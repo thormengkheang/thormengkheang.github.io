@@ -2,13 +2,13 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
-  // used to generate images
-  site:
-    process.env.VERCEL_ENV === 'production' ? 'https://thormengkheang.github.io/' : 'https://localhost:3000/',
+  site: 'https://thormengkheang.github.io',
   trailingSlash: 'ignore',
-  integrations: [sitemap(), tailwind()],
+  integrations: [ mdx(), sitemap(), tailwind()],
   vite: {
     optimizeDeps: {
       exclude: ['@resvg/resvg-js']
