@@ -5,7 +5,7 @@ author: "Mengkheang Thor"
 tags:
   - API
   - Architecture Styles
-imgUrl: "../../assets/arch-styles-cover.png"
+imgUrl: "../../assets/arch-styles.gif"
 description: "Explore the world of API architecture styles! From high-performance gRPC to real-time WebSockets, this post breaks down six popular approaches in simple terms. Discover which one suits your software needs and stay ahead in the tech game."
 layout: "../../layouts/BlogPost.astro"
 ---
