@@ -1,5 +1,5 @@
 ---
-title: "🧹 10 Linting Rules for Writing Better Asynchronous Code"
+title: "10 Linting Rules for Writing Better Asynchronous Code"
 pubDate: 09/12/2023 14:25 # MM/DD/YYYY HH:MM
 author: "Mengkheang Thor"
 tags:
@@ -11,7 +11,7 @@ description: "Unlock the power of linting with essential rules for crafting top-
 layout: "../../layouts/BlogPost.astro"
 ---
 
-# Linting Rules for Writing Better Asynchronous JavaScript Code
+# 🧹 Linting Rules for Writing Better Asynchronous JavaScript Code
 
 Debugging asynchronous code in JavaScript often feels like navigating through a minefield. You don't know when and where console.log statements will appear, coupled with the challenge of ensuring executed run in the desired order, can be difficult.
 

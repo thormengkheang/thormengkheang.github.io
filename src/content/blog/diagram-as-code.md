@@ -1,5 +1,5 @@
 ---
-title: 🚀 Transform Your Code into Architecture Diagrams Automatically!
+title: Transform Your Code into Architecture Diagrams Automatically!
 pubDate: 09/08/2023 14:25 # MM/DD/YYYY HH:MM
 author: "Mengkheang Thor"
 tags:
@@ -10,7 +10,7 @@ description: 'Unlock the future of architecture with "Diagram as Code" – effor
 layout: "../../layouts/BlogPost.astro"
 ---
 
-# Unlocking the Power of Code: Automatically Transform Your Architecture
+# 🚀 Unlocking the Power of Code: Automatically Transform Your Architecture
 
 In the ever-evolving landscape of technology, innovation is the key to staying ahead of the curve. Imagine if you could seamlessly translate your code into intricate architecture diagrams with minimal effort. Well, brace yourself for some exciting news! We've uncovered a remarkable GitHub repository that does exactly that – introducing "Diagram as Code" for effortlessly prototyping cloud system architectures.
 

@@ -1,5 +1,5 @@
 ---
-title: 🌐 6 Popular API Architecture Styles 🏗️
+title: 6 Popular API Architecture Styles
 pubDate: 09/13/2023 14:25 # MM/DD/YYYY HH:MM
 author: "Mengkheang Thor"
 tags:
@@ -10,7 +10,7 @@ description: "Explore the world of API architecture styles! From high-performanc
 layout: "../../layouts/BlogPost.astro"
 ---
 
-# 6 Popular API Architecture Styles
+# 🌐 6 Popular API Architecture Styles 🏗️
 
 APIs are the backbone of modern software development. Here are six popular API architecture styles demystified:
 
