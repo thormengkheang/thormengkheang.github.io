@@ -4,12 +4,11 @@ import Layout from "@layouts/Default.astro";
 import BlogList from "@components/blog/BlogList.astro";
 
 const posts = await getCollection("blog").then((collection) => {
-  collection.sort((a, b) => {
+  return collection.sort((a, b) => {
     return (
       new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
     );
   });
-  return collection;
 });
 ---
 
