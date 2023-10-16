@@ -15,6 +15,11 @@ const socialIcons = [
     url: "https://github.com/thormengkheang",
     icon: "i-uil-github",
   },
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/thormengkheang',
+    icon: 'i-uil-linkedin',
+  },
   { name: "RSS", url: "/feed.xml", icon: "i-uil-rss" },
 ];
 
@@ -33,7 +38,7 @@ const { pageTitle } = Astro.props;
         navigationItems.map((item) => (
           <li>
             <a
-              class="text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out"
+              class="text-lg font-medium hover:text-green-500 hover:underline transition-all duration-150 ease-in-out"
               href={item.url}
               title={`Go to ${item.name}`}
             >
@@ -47,7 +52,7 @@ const { pageTitle } = Astro.props;
           <li>
             <a
               href={item.url}
-              class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
+              class="hover:text-green-500 hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
               title={`'See @ElianCodes on ${item.name}`}
             >
